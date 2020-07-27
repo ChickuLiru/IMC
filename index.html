@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calcule seu IMC</h1>
+    </header>
+    <form>
+    <div class="borda">
+        
+        <div class="process">
+            <label id="lbl1">Altura(ex.:1.70)</label>
+            <label id="lbl2">Peso(ex.:65.2)</label>
+        </div>
+        <div class="process2">
+            <input type="number" placeholder="Altura" id="put1" required>
+            <input type="number" placeholder="Peso" id="put2" required>
+        </div>
+        <div class="outer">
+            <button type="reset" id="btn1">Limpar</button>
+            <button type="button" id="btn2" onclick="calcular()">Calcular</button>
+        </div>
+        <input type="read" placeholder="IMC" id="result" disabled>
+        <div class="table">
+            <table class="tabela">
+                <tr id="thp">
+                    <th class="thp">IMC</th>
+                    <th class="thp">Classificação</th>
+                    <th class="thp">Obesidade</th>
+                </tr>
+                <tr>
+                    <th>Menor que 18.5</th>
+                    <th>Magreza</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Entre 18.5 e 24.9</th>
+                    <th>Normal</th>
+                    <th>0</th>
+                </tr>
+                <tr>
+                    <th>Entre 25.0 e 29.9</th>
+                    <th>Sobrepeso</th>
+                    <th>|</th>
+                </tr>
+                <tr>
+                   <th>Entre 30.0 e 39.9</th>
+                    <th>Obesidade</th>
+                    <th>||</th>
+                </tr>
+                <tr>
+                    <th>Maior que 40.0</th>
+                    <th>Obesidade grave</th>
+                    <th>|||</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
